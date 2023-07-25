@@ -80,3 +80,10 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+config: 
+  APP_MY_SECRET: "default-helm-secret"
+
+externalConfigSecret: 
+  name: "demo-service-secret-config"
+  enabled: false

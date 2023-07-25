@@ -33,6 +33,14 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          envFrom:
+          {{- if .Values.externalConfigSecret.enabled }}
+            - secretRef:
+                name: {{ .Values.externalConfigSecret.name }}
+          {{- else }}
+            - secretRef:
+                name: {{ include "demo-service.configSecretName" . }}
+          {{- end }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}

@@ -24,6 +24,13 @@ If release name contains chart name it will be used as a full name.
 {{- end }}
 
 {{/*
+Create config secret name.
+*/}}
+{{- define "demo-service.configSecretName" -}}
+{{- printf "%s-config" (include "demo-service.fullname" .) }}
+{{- end }}
+
+{{/*
 Create chart name and version as used by the chart label.
 */}}
 {{- define "demo-service.chart" -}}
