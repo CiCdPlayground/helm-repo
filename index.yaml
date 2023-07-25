@@ -3,6 +3,16 @@ entries:
   demo-service:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2023-07-25T12:41:36.71031094Z"
+    description: A Helm chart for Kubernetes
+    digest: 1d807dd0579993e40b343bcfdecb1d9ca40527178728bf2ca78e0507771f5a9d
+    name: demo-service
+    type: application
+    urls:
+    - https://github.com/CiCdPlayground/helm-repo/releases/download/demo-service-0.1.1/demo-service-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2023-07-25T08:08:24.604171124Z"
     description: A Helm chart for Kubernetes
     digest: ed99bdf8d7c6e1d3efdac29ea4c3445769e2b283d2afeb6082cfe181cda28634
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/CiCdPlayground/helm-repo/releases/download/demo-service-0.1.0/demo-service-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-25T08:08:24.604178124Z"
+generated: "2023-07-25T12:41:36.71032184Z"
