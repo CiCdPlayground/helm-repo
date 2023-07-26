@@ -85,5 +85,6 @@ config:
   APP_MY_SECRET: "default-helm-secret"
 
 externalConfigSecret: 
-  name: "demo-service-secret-config"
-  enabled: false
+  clusterSecretStoreName: "aws-secret-store"
+  externalSecretName: "demo/demo-service"
+  enabled: true
