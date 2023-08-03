@@ -31,4 +31,15 @@ entries:
     urls:
     - https://github.com/CiCdPlayground/helm-repo/releases/download/demo-service-0.1.0/demo-service-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-26T06:23:26.38548057Z"
+  generic-service:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2023-08-03T12:33:38.240010258Z"
+    description: A Helm chart for Kubernetes
+    digest: eb1f93d615730852d3cf484ab76c330365c441c2adb549610ecedb80ebd96ef6
+    name: generic-service
+    type: application
+    urls:
+    - https://github.com/CiCdPlayground/helm-repo/releases/download/generic-service-0.1.1/generic-service-0.1.1.tgz
+    version: 0.1.1
+generated: "2023-08-03T12:33:38.240018759Z"
